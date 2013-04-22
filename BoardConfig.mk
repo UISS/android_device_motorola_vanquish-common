@@ -18,13 +18,3 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 BOARD_EGL_CFG := $(LOCAL_PATH)/config/egl.cfg
-
-# assert
-TARGET_OTA_ASSERT_DEVICE := xt925,xt926,xt907,vanquish_u,vanquish,scorpion_mini,mb886,qinara,asanti,asanti_c,xt897
-
-# Recovery
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
-BOARD_SUPPRESS_EMMC_WIPE := true
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
-TARGET_USERIMAGES_USE_EXT4 := true
