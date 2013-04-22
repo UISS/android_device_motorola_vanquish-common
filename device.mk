@@ -6,7 +6,6 @@ $(call inherit-product, device/motorola/msm8960-common/msm8960.mk)
 
 LOCAL_PATH := device/motorola/vanquish-common
 
-TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 #media
