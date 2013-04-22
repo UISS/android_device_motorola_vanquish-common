@@ -42,10 +42,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/wlanprima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
 	$(LOCAL_PATH)/proprietary/wlanprima/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 
-# EGL config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/egl.cfg:system/lib/egl/egl.cfg
-
 #misc
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.fuse_sdcard=true \
@@ -64,17 +60,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.sys.qc.sub.rstrtlvl=3 \
 	persist.sys.qc.sub.rdump.on=1 \
 	persist.sys.qc.sub.rdump.max=20
-
-# QCOM Display
-PRODUCT_PROPERTY_OVERRIDES += \
-	debug.egl.hw=1 \
-	debug.sf.hw=1 \
-	debug.gr.numframebuffers=3 \
-	persist.sys.ui.hw=true \
-	debug.composition.type=c2d \
-	debug.egl.recordable.rgba8888=1 \
-	debug.enabletr=0 \
-	ro.hwui.text_cache_width=2048
 
 # Radio and Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
