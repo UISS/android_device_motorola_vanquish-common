@@ -9,19 +9,6 @@ LOCAL_PATH := device/motorola/vanquish-common
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-#init
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/root/fstab.qcom:root/fstab.qcom \
-	$(LOCAL_PATH)/root/init.mmi.usb.rc:root/init.mmi.usb.rc \
-	$(LOCAL_PATH)/root/init.mmi.usb.sh:root/init.mmi.usb.sh \
-	$(LOCAL_PATH)/root/init.msm.rc:root/init.msm.rc \
-	$(LOCAL_PATH)/root/init.qcom.class_core.sh:root/init.qcom.class_core.sh \
-	$(LOCAL_PATH)/root/init.qcom.class_main.sh:root/init.qcom.class_main.sh \
-	$(LOCAL_PATH)/root/init.qcom.rc:root/init.qcom.rc \
-	$(LOCAL_PATH)/root/init.qcom.sh:root/init.qcom.sh \
-	$(LOCAL_PATH)/root/init.target.rc:root/init.target.rc \
-	$(LOCAL_PATH)/root/ueventd.qcom.rc:root/ueventd.qcom.rc
-
 #media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/audio_policy.conf:system/etc/audio_policy.conf \
