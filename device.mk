@@ -6,8 +6,6 @@ $(call inherit-product, device/motorola/msm8960-common/msm8960.mk)
 
 LOCAL_PATH := device/motorola/vanquish-common
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # IDC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/melfas-ts.idc:system/usr/idc/melfas-ts.idc \
