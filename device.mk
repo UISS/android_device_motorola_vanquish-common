@@ -9,18 +9,6 @@ LOCAL_PATH := device/motorola/vanquish-common
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-#scripts
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/scripts/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
-	$(LOCAL_PATH)/scripts/init.qcom.coex.sh:system/etc/init.qcom.coex.sh \
-	$(LOCAL_PATH)/scripts/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
-	$(LOCAL_PATH)/scripts/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh \
-	$(LOCAL_PATH)/scripts/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
-	$(LOCAL_PATH)/scripts/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
-	$(LOCAL_PATH)/scripts/mount_pds.sh:system/bin/mount_pds.sh \
-	$(LOCAL_PATH)/scripts/qcamerasrvwrapper.sh:system/bin/qcamerasrvwrapper.sh \
-	$(LOCAL_PATH)/scripts/sensorsqcomwrapper.sh:system/bin/sensorsqcomwrapper.sh
-
 #init
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/root/fstab.qcom:root/fstab.qcom \
