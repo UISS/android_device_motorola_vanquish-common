@@ -11,4 +11,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/melfas-ts.idc:system/usr/idc/melfas-ts.idc \
     $(LOCAL_PATH)/idc/evfwd.idc:system/usr/idc/evfwd.idc
 
+PRODUCT_PACKAGES += \
+    lights.msm8960
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
