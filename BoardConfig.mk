@@ -3,6 +3,3 @@
 LOCAL_PATH := device/motorola/vanquish-common
 
 BOARD_HAS_NO_SELECT_BUTTON := true
-
-#lights
-TARGET_PROVIDES_LIBLIGHT := true

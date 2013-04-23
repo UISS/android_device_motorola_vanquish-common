@@ -11,10 +11,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/melfas-ts.idc:system/usr/idc/melfas-ts.idc \
     $(LOCAL_PATH)/idc/evfwd.idc:system/usr/idc/evfwd.idc
 
-#packages
-PRODUCT_PACKAGES += \
-    lights.msm8960
-
 # keylayouts
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/keylayout/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
@@ -50,6 +46,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keychars/kbd_us_basic.kcm:system/usr/keychars/kbd_us_basic.kcm \
     $(LOCAL_PATH)/keychars/kbd_us_intl.kcm:system/usr/keychars/kbd_us_intl.kcm \
     $(LOCAL_PATH)/keychars/usb_keyboard_102_en_us.kcm:system/usr/keychars/usb_keyboard_102_en_us.kcm
-
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
